@@ -1,0 +1,16 @@
+
+{
+	"name": "Ino",
+	"description": "Ino core library: provides fundamental functionality (used by every other Ino libraries)",
+	"keywords": [
+		"ino",
+		"core"
+	],
+	"authors" : {
+		"name": "Bennet",
+		"email": "bennet0108@gmail.com"
+	},
+	"version": "1.0.0",
+	"frameworks": "arduino",
+	"platforms": "atmelavr"
+}
