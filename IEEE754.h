@@ -2,6 +2,7 @@
 #ifndef INO_IEEE754_INCLUDED
 #define INO_IEEE754_INCLUDED
 
+#include "InoCore.h"
 #include "BitField.h"
 
 namespace ino {

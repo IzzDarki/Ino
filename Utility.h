@@ -2,7 +2,9 @@
 #ifndef INO_UTILITY_INCLUDED
 #define INO_UTILITY_INCLUDED
 
+#include "InoCore.h"
 #include <std/TypeTraits.h>
+
 #include <math.h>
 #include <inttypes.h>
 

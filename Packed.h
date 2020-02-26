@@ -2,8 +2,8 @@
 #ifndef INO_PACKED_INCLUDED
 #define INO_PACKED_INCLUDED
 
+#include "InoCore.h"
 #include "Utility.h"
-
 #include <std/TypeTraits.h>
 
 namespace ino {

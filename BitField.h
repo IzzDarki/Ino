@@ -2,6 +2,7 @@
 #ifndef INO_BITFIELD_INCLUDED
 #define INO_BITFIELD_INCLUDED
 
+#include "InoCore.h"
 #include <std/TypeTraits.h>
 #include <Utility.h>
 
