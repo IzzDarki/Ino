@@ -21,6 +21,9 @@ namespace ino {
 
 	namespace IEEE754 {
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wstrict-aliasing"
+
 		inline bool isninf(float Num)
 		{
 			IEEE754Single& NumParts = reinterpret_cast<IEEE754Single&>(Num);
@@ -68,6 +71,8 @@ namespace ino {
 			IEEE754Double& NumParts = reinterpret_cast<IEEE754Double&>(Num);
 			return NumParts.Mantisa != 0 && NumParts.Exponent == 0x7FF;
 		}
+
+#pragma GCC diagnostic pop
 
 	}
 
