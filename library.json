@@ -1,6 +1,7 @@
 
 {
 	"name": "Ino",
+	"version": "1.0.0",
 	"description": "Ino core library: provides fundamental functionality (used by every other Ino libraries)",
 	"keywords": [
 		"ino",
@@ -10,7 +11,11 @@
 		"name": "Bennet",
 		"email": "bennet0108@gmail.com"
 	},
-	"version": "1.0.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/IzzDarki/Ino.git"
+	},
+	"license": "MIT",
 	"frameworks": "arduino",
 	"platforms": "atmelavr"
 }
