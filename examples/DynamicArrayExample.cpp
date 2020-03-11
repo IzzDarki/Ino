@@ -6,7 +6,7 @@
 void setup() {
 	ino::out.begin(9600);
 
-	ino::DynamicArray<int> DArray;
+	ino::DynamicArray<int> DArray = { 0, 1, 2, 3 };
 
 	DArray.PushBack(9);
 	DArray.PushBack(2);
