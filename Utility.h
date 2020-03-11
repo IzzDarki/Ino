@@ -19,7 +19,7 @@ namespace ino {
 
 	// * ----- Fold-expression helpers ------------------------------------------------------------------------------------------------
 
-	template <bool Arg>
+	template <bool Arg = false>
 	constexpr bool FoldLogicalOr_Helper() {
 		return Arg;
 	}
@@ -29,7 +29,7 @@ namespace ino {
 		return First || FoldLogicalOr_Helper<Others...>();
 	}
 
-	template <bool Arg>
+	template <bool Arg = true>
 	constexpr bool FoldLogicalAnd_Helper() {
 		return Arg;
 	}
