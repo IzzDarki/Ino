@@ -104,34 +104,34 @@ namespace ino {
 		using type = typename ReduceType<typename std::remove_reference<T>::type>::type;
 	};
 
-	// * ----- ReduceTypeExeptConst typetrait -----------------------------------------------------------------------------------------
+	// * ----- ReduceTypeExceptConst typetrait -----------------------------------------------------------------------------------------
 	
 	// (volatile) T (&(&))								-> T
 	// const (volatile) T (&(&))						-> const T
 	// (volatile) T * (const) (volatile) (&(&))			-> T*	
 	// const (volatile) T * (const) (volatile) (&(&))	-> const T*
 	template <typename T, typename Enable = void>
-	struct ReduceTypeExeptConst /*{ using type = T; }*/;
+	struct ReduceTypeExceptConst /*{ using type = T; }*/;
 
 	template <typename T>
-	struct ReduceTypeExeptConst<T, typename std::enable_if<!std::is_pointer<T>::value && !std::is_pointer<typename std::remove_reference<T>::type>::value>::type>
+	struct ReduceTypeExceptConst<T, typename std::enable_if<!std::is_pointer<T>::value && !std::is_pointer<typename std::remove_reference<T>::type>::value>::type>
 	{
 		using type = typename std::remove_volatile<typename std::remove_reference<T>::type>::type;
 	};
 
 	template <typename T>
-	struct ReduceTypeExeptConst<T, typename std::enable_if<std::is_pointer<T>::value>::type>
+	struct ReduceTypeExceptConst<T, typename std::enable_if<std::is_pointer<T>::value>::type>
 	{
 		using type = typename std::add_pointer<typename std::remove_volatile<typename std::remove_pointer<T>::type>::type>::type;
 	};
 
 	template <typename T>
-	struct ReduceTypeExeptConst<T, typename std::enable_if<std::is_reference<T>::value && std::is_pointer<typename std::remove_reference<T>::type>::value>::type>
+	struct ReduceTypeExceptConst<T, typename std::enable_if<std::is_reference<T>::value && std::is_pointer<typename std::remove_reference<T>::type>::value>::type>
 	{
-		using type = typename ReduceTypeExeptConst<typename std::remove_reference<T>::type>::type;
+		using type = typename ReduceTypeExceptConst<typename std::remove_reference<T>::type>::type;
 	};
 
-	// * ----- ReduceTypeExeptVolatile typetrait -----------------------------------------------------------------------------------------
+	// * ----- ReduceTypeExceptVolatile typetrait -----------------------------------------------------------------------------------------
 	
 	// (const) T (&(&))									-> T
 	// (const) volatile T (&(&))						-> volatile T
@@ -139,24 +139,24 @@ namespace ino {
 	// (const) volatile T * (const) (volatile) (&(&))	-> volatile T*
 
 	template <typename T, typename Enable = void>
-	struct ReduceTypeExeptVolatile /*{ using type = T; }*/;
+	struct ReduceTypeExceptVolatile /*{ using type = T; }*/;
 
 	template <typename T>
-	struct ReduceTypeExeptVolatile<T, typename std::enable_if<!std::is_pointer<T>::value && !std::is_pointer<typename std::remove_reference<T>::type>::value>::type>
+	struct ReduceTypeExceptVolatile<T, typename std::enable_if<!std::is_pointer<T>::value && !std::is_pointer<typename std::remove_reference<T>::type>::value>::type>
 	{
 		using type = typename std::remove_const<typename std::remove_reference<T>::type>::type;
 	};
 
 	template <typename T>
-	struct ReduceTypeExeptVolatile<T, typename std::enable_if<std::is_pointer<T>::value>::type>
+	struct ReduceTypeExceptVolatile<T, typename std::enable_if<std::is_pointer<T>::value>::type>
 	{
 		using type = typename std::add_pointer<typename std::remove_const<typename std::remove_pointer<T>::type>::type>::type;
 	};
 
 	template <typename T>
-	struct ReduceTypeExeptVolatile<T, typename std::enable_if<std::is_reference<T>::value && std::is_pointer<typename std::remove_reference<T>::type>::value>::type>
+	struct ReduceTypeExceptVolatile<T, typename std::enable_if<std::is_reference<T>::value && std::is_pointer<typename std::remove_reference<T>::type>::value>::type>
 	{
-		using type = typename ReduceTypeExeptVolatile<typename std::remove_reference<T>::type>::type;
+		using type = typename ReduceTypeExceptVolatile<typename std::remove_reference<T>::type>::type;
 	};
 
 	// * ----- IsElementType typetrait  -----------------------------------------------------------------------------------------------
@@ -167,12 +167,12 @@ namespace ino {
 	// * ----- IsElementTypeConsiderConst typetrait  ----------------------------------------------------------------------------------
 
 	template <typename T1, typename T2>
-	struct IsElementTypeConsiderConst : std::integral_constant<bool, std::is_array<typename std::remove_reference<T2>::type>::value && std::is_same<T1, typename ReduceTypeExeptConst<typename ElementType<T2>::type>::type>::value> {};
+	struct IsElementTypeConsiderConst : std::integral_constant<bool, std::is_array<typename std::remove_reference<T2>::type>::value && std::is_same<T1, typename ReduceTypeExceptConst<typename ElementType<T2>::type>::type>::value> {};
 
 	// * ----- IsElementTypeConsiderVolatile typetrait  ----------------------------------------------------------------------------------
 
 	template <typename T1, typename T2>
-	struct IsElementTypeConsiderVolatile : std::integral_constant<bool, std::is_array<typename std::remove_reference<T2>::type>::value && std::is_same<T1, typename ReduceTypeExeptVolatile<typename ElementType<T2>::type>::type>::value> {};
+	struct IsElementTypeConsiderVolatile : std::integral_constant<bool, std::is_array<typename std::remove_reference<T2>::type>::value && std::is_same<T1, typename ReduceTypeExceptVolatile<typename ElementType<T2>::type>::type>::value> {};
 	
 	// * ----- Templated operator%  ---------------------------------------------------------------------------------------------------
 
