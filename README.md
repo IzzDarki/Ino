@@ -3,7 +3,7 @@
 #                            Core                             #
 ---------------------------------------------------------------
 
-This library is the core of the Ino library series. It provides some useful functionality, that each isn't big enough to consist as an own library.
+This library is the core of the Ino library series. It also provides some useful functionality, that each isn't big enough to consist as an own library.
 
 ---------------------------------------------------------------
 
