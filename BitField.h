@@ -37,11 +37,11 @@ namespace ino {
 			return *this;
 		}
 
-		operator Type() const { return (Val >> Index) & Mask; }
-		explicit operator bool() const { return Val & (Mask << Index); }
+		constexpr operator Type() const { return (Val >> Index) & Mask; }
+		constexpr explicit operator bool() const { return Val & (Mask << Index); }
 
-		inline BitField& operator--() { return *this -= 1; }
-		inline BitField& operator++() { return *this += 1; }
+		constexpr inline BitField& operator--() { return *this -= 1; }
+		constexpr inline BitField& operator++() { return *this += 1; }
 
 		Type operator++(int) { Type Temp = *this; ++*this; return Temp; }
 		Type operator--(int) { Type Temp = *this; --*this; return Temp; }
@@ -66,8 +66,8 @@ namespace ino {
 			return *this;
 		}
 
-		operator Type() const { return (Val >> Index) & Mask; }
-		explicit operator bool() const { return Val & (Mask << Index); }
+		constexpr operator Type() const { return (Val >> Index) & Mask; }
+		constexpr explicit operator bool() const { return Val & (Mask << Index); }
 
 		static constexpr Type MaximalNumber = 1;
 
