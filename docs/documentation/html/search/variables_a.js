@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['posinf_825',['PosInf',['../structino_1_1_specialnumber_formats.html#ad8ab498d8ff2b32a6b66743136869cbc',1,'ino::SpecialnumberFormats']]],
-  ['precisionval_826',['PrecisionVal',['../structino_1_1_precision_formats.html#a35f5532e89a70e96f481a0d429afa5f9',1,'ino::PrecisionFormats']]]
+  ['oct_830',['Oct',['../namespaceino_1_1_fmt.html#a38837da8ce82e9769c6196c00daea09a',1,'ino::Fmt']]],
+  ['out_831',['out',['../namespaceino.html#a1d5a0091d6da102797de18ba15738fc1',1,'ino']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['oct_823',['Oct',['../namespaceino_1_1_fmt.html#a38837da8ce82e9769c6196c00daea09a',1,'ino::Fmt']]],
-  ['out_824',['out',['../namespaceino.html#a1d5a0091d6da102797de18ba15738fc1',1,'ino']]]
+  ['nan_828',['Nan',['../structino_1_1_specialnumber_formats.html#a89fc6af6b92f4ed1c9dfbbaebbc6d0cc',1,'ino::SpecialnumberFormats']]],
+  ['neginf_829',['NegInf',['../structino_1_1_specialnumber_formats.html#afc3c33b49cad7c16f08b6befb8423baa',1,'ino::SpecialnumberFormats']]]
 ];

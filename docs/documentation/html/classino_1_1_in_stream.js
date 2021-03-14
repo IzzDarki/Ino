@@ -10,7 +10,6 @@ var classino_1_1_in_stream =
       [ "WrongCase", "classino_1_1_in_stream.html#a3d74a413e0f3008fb2aaf7f331141421a5bf22ee3bb95f8fdadb5d45db7d9b1d0", null ],
       [ "WrongDecimalPoint", "classino_1_1_in_stream.html#a3d74a413e0f3008fb2aaf7f331141421aeb7c54509b74a6a2b07a310dde2a3e13", null ],
       [ "WrongPrecision", "classino_1_1_in_stream.html#a3d74a413e0f3008fb2aaf7f331141421a2e2ad347b26f598820ac2d210ac885f4", null ],
-      [ "WrongSpecialNum", "classino_1_1_in_stream.html#a3d74a413e0f3008fb2aaf7f331141421a910557760d1633627f9761b0a84f519b", null ],
       [ "WrongCString", "classino_1_1_in_stream.html#a3d74a413e0f3008fb2aaf7f331141421aee2c25bc47ebc04e8948603086945723", null ],
       [ "NoData", "classino_1_1_in_stream.html#a3d74a413e0f3008fb2aaf7f331141421acbf169aecd4365561eb6b245659f55d8", null ]
     ] ],

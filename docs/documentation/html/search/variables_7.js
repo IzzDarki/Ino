@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['mantisa_819',['Mantisa',['../unionino_1_1_i_e_e_e754_single.html#a1d845fd0b920d714752c06613c820a5f',1,'ino::IEEE754Single::Mantisa()'],['../unionino_1_1_i_e_e_e754_double.html#aff1478c9755908665c4af21d15e6acd1',1,'ino::IEEE754Double::Mantisa()']]],
-  ['maximalnumber_820',['MaximalNumber',['../classino_1_1_bit_field.html#aa3c0086ab0cb3bccaf1ae1862d8b113b',1,'ino::BitField::MaximalNumber()'],['../classino_1_1_bit_field_3_01_index_00_011_01_4.html#aa753d4b634e28221b47f6631eab73b1a',1,'ino::BitField&lt; Index, 1 &gt;::MaximalNumber()']]]
+  ['lastmicros_823',['LastMicros',['../classino_1_1_micros_timer.html#adf912d72e77600be75f1e7559a184f36',1,'ino::MicrosTimer::LastMicros()'],['../classino_1_1_dynamic_micros_timer.html#a2cef8b98f9862907a02b927ae01e0e92',1,'ino::DynamicMicrosTimer::LastMicros()']]],
+  ['lastmillis_824',['LastMillis',['../classino_1_1_millis_timer.html#a31935bc2366b07f3bb9d8d639ad98413',1,'ino::MillisTimer::LastMillis()'],['../classino_1_1_dynamic_millis_timer.html#a4ced9f783e51a6c271af16ee2843277e',1,'ino::DynamicMillisTimer::LastMillis()']]],
+  ['lowercase_825',['Lowercase',['../namespaceino_1_1_fmt.html#a89133203532824dd0cbb1b5c2619238c',1,'ino::Fmt']]]
 ];

@@ -10,7 +10,8 @@ var hierarchy =
     ] ],
     [ "std::_Conjunction< _First_value, _First, _Rest >", "structstd_1_1___conjunction.html", null ],
     [ "std::_Conjunction< true, _True, _Next, _Rest... >", "structstd_1_1___conjunction_3_01true_00_01___true_00_01___next_00_01___rest_8_8_8_01_4.html", null ],
-    [ "std::_Decayed_cond_oper< _Ty1, _Ty2, class >", "structstd_1_1___decayed__cond__oper.html", [
+    [ "std::_Decayed_cond_oper< _Ty1, _Ty2, class >", "structstd_1_1___decayed__cond__oper.html", null ],
+    [ "std::_Decayed_cond_oper< _Ty1, _Ty2 >", "structstd_1_1___decayed__cond__oper.html", [
       [ "std::_Common_type2< _Ty1, _Ty2, _Ty1, _Ty2 >", "structstd_1_1___common__type2_3_01___ty1_00_01___ty2_00_01___ty1_00_01___ty2_01_4.html", null ]
     ] ],
     [ "std::_Decayed_cond_oper< _Ty1, _Ty2, typename _void_t< decltype(false ? ::std::declval< _Ty1 >() :::std::declval< _Ty2 >())>::type >", "structstd_1_1___decayed__cond__oper_3_01___ty1_00_01___ty2_00_01typename_01__void__t_3_01decltypeb891266757a5d229ea067ce37193674.html", null ],
@@ -42,9 +43,10 @@ var hierarchy =
       [ "std::_Common_type3< typename _void_t< typename common_type< _Ty1, _Ty2 >::type >::type, _Ty1, _Ty2, _Rest... >", "structstd_1_1___common__type3_3_01typename_01__void__t_3_01typename_01common__type_3_01___ty1_00783f6a45fc45a91b591cfc17d1f901e8.html", null ]
     ] ],
     [ "std::common_type< typename decay< _Ty1 >::type, typename decay< _Ty2 >::type >", "structstd_1_1common__type.html", [
-      [ "std::_Common_type2< _Ty1, _Ty2, _Decayed1, _Decayed2 >", "structstd_1_1___common__type2.html", [
+      [ "std::_Common_type2< _Ty1, _Ty2 >", "structstd_1_1___common__type2.html", [
         [ "std::common_type< _Ty1, _Ty2 >", "structstd_1_1common__type_3_01___ty1_00_01___ty2_01_4.html", null ]
-      ] ]
+      ] ],
+      [ "std::_Common_type2< _Ty1, _Ty2, _Decayed1, _Decayed2 >", "structstd_1_1___common__type2.html", null ]
     ] ],
     [ "std::common_type<>", "structstd_1_1common__type_3_4.html", null ],
     [ "std::conditional< _Test, _Ty1, _Ty2 >", "structstd_1_1conditional.html", null ],
@@ -166,10 +168,11 @@ var hierarchy =
     [ "ino::MillisTimer", "classino_1_1_millis_timer.html", null ],
     [ "ino::MinimumType< LastBit >", "structino_1_1_minimum_type.html", null ],
     [ "ino::MinimumType< Index+1 >", "structino_1_1_minimum_type.html", null ],
+    [ "ino::MinimumType< Index+Bits >", "structino_1_1_minimum_type.html", null ],
     [ "ino::PinStream", "classino_1_1_pin_stream.html", [
-      [ "ino::PIOPinInStream", "classino_1_1_p_i_o_pin_in_stream.html", null ],
       [ "ino::PinInStream", "classino_1_1_pin_in_stream.html", null ],
-      [ "ino::PinOutStream", "classino_1_1_pin_out_stream.html", null ]
+      [ "ino::PinOutStream", "classino_1_1_pin_out_stream.html", null ],
+      [ "ino::PIOPinInStream", "classino_1_1_p_i_o_pin_in_stream.html", null ]
     ] ],
     [ "ino::PrecisionFormats", "structino_1_1_precision_formats.html", null ],
     [ "std::remove_all_extents< _Ty >", "structstd_1_1remove__all__extents.html", null ],
@@ -202,9 +205,9 @@ var hierarchy =
     [ "ino::SpecialnumberFormats", "structino_1_1_specialnumber_formats.html", null ],
     [ "ino::StreamBase", "classino_1_1_stream_base.html", [
       [ "ino::InStream", "classino_1_1_in_stream.html", [
+        [ "ino::PinInStream", "classino_1_1_pin_in_stream.html", null ],
         [ "ino::PIOPinInStream", "classino_1_1_p_i_o_pin_in_stream.html", null ],
         [ "ino::PIOSerialInStream", "classino_1_1_p_i_o_serial_in_stream.html", null ],
-        [ "ino::PinInStream", "classino_1_1_pin_in_stream.html", null ],
         [ "ino::SerialInStream", "classino_1_1_serial_in_stream.html", null ],
         [ "ino::StringStream", "classino_1_1_string_stream.html", null ]
       ] ],
@@ -214,11 +217,11 @@ var hierarchy =
         [ "ino::StringStream", "classino_1_1_string_stream.html", null ]
       ] ]
     ] ],
-    [ "_Conjunction::type", null, [
-      [ "std::conjunction< _First, _Rest... >", "structstd_1_1conjunction_3_01___first_00_01___rest_8_8_8_01_4.html", null ]
-    ] ],
-    [ "_Disjunction::type", null, [
+    [ "type", null, [
       [ "std::disjunction< _First, _Rest... >", "structstd_1_1disjunction_3_01___first_00_01___rest_8_8_8_01_4.html", null ]
+    ] ],
+    [ "type", null, [
+      [ "std::conjunction< _First, _Rest... >", "structstd_1_1conjunction_3_01___first_00_01___rest_8_8_8_01_4.html", null ]
     ] ],
     [ "std::underlying_type< _Ty >", "structstd_1_1underlying__type.html", null ],
     [ "ino::Wrapper< T >", "structino_1_1_wrapper.html", null ],
